@@ -18,6 +18,11 @@ func (set *Set) Remove(element string) {
 	delete(set.element, element)
 }
 
+func (set *Set) Has(element string) bool {
+  _, ok := set.element[element]
+  return ok
+}
+
 func (set *Set) Size() int {
 	return len(set.element)
 }

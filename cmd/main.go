@@ -1,12 +1,12 @@
 package main
 
 import (
-	"dnc-checker/in-memory-hashset/set"
+	"dnc/cmd/set"
 	"fmt"
 )
 
 func main() {
-	fmt.Println("Hello, World!")
 	dnc := set.NewSet()
 	dnc.Add("1231234444")
+  fmt.Println(dnc.Size())
 }
